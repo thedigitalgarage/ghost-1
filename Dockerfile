@@ -9,9 +9,9 @@ FROM node:0.10.46
 
 # Install unzip
 
-RUN \
- apt-get update \
- apt-get install unzip
+RUN apt-get update
+
+RUN apt-get install unzip
 
 # Install Ghost
 RUN \
