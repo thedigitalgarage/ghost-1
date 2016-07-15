@@ -9,9 +9,8 @@ FROM nodejs:0.10
 
 # Install unzip
 
-RUN apt-get update
-
-RUN apt-get install unzip
+RUN yum update && \
+    yum install unzip
 
 # Install Ghost
 RUN \
