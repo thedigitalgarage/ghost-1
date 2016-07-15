@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM node:0.10.46
+FROM nodejs:0.10
 
 # Install unzip
 
