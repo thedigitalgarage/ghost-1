@@ -1,11 +1,11 @@
 #
 # Ghost Dockerfile
 #
-# https://github.com/dockerfile/ghost
+# https://github.com/thedigitalgarage/ghost-1
 #
 
 # Pull base image.
-FROM dockerfile/nodejs
+FROM node:0.10.46
 
 # Install Ghost
 RUN \
