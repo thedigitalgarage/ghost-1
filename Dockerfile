@@ -7,13 +7,6 @@
 # Pull base image.
 FROM nodejs:0.10
 
-USER root
-
-# Install unzip
-
-RUN yum update && \
-    yum install unzip
-
 # Install Ghost
 RUN \
   cd /tmp && \
@@ -39,8 +32,6 @@ WORKDIR /ghost
 
 # Define default command.
 CMD ["bash", "/ghost-start"]
-
-USER 1001
 
 # Expose ports.
 EXPOSE 2368
