@@ -7,6 +7,8 @@
 # Pull base image.
 FROM nodejs:0.10
 
+USER root
+
 # Install Ghost
 RUN \
   cd /tmp && \
@@ -35,3 +37,5 @@ CMD ["bash", "/ghost-start"]
 
 # Expose ports.
 EXPOSE 2368
+
+USER 1001
